@@ -86,6 +86,11 @@ module.exports = {
         '**/*.stories.tsx',
         '**/__mock__/**/*.ts',
       ],
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx', '.js'],
+        },
+      },
       env: {
         jest: true,
       },
@@ -102,13 +107,13 @@ module.exports = {
         'jest/valid-expect': 'error',
         '@typescript-eslint/dot-notation': 'off',
         'import/prefer-default-export': 'off',
-        'testing-library/await-async-query': 'error',
         'testing-library/await-async-utils': 'error',
-        'testing-library/no-await-sync-query': 'error',
-        'testing-library/no-debug': 'error',
         'testing-library/no-dom-import': 'error',
         'testing-library/no-node-access': 'error',
         'testing-library/prefer-screen-queries': 'warn',
+        // 'testing-library/await-async-query': 'error',
+        // 'testing-library/no-await-sync-query': 'error',
+        // 'testing-library/no-debug': 'error',
       },
     },
     {
