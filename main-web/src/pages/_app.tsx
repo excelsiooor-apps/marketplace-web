@@ -7,6 +7,7 @@ import { Toaster } from 'react-hot-toast';
 import { Provider } from 'react-redux';
 import { GlobalStyles, theme } from '@/lib/theme';
 import { setupStore } from '@/lib/store';
+import { ErrorBoundary } from '@/components';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -28,7 +29,9 @@ const AppWrapper = ({ Component, pageProps }: AppProps) => (
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Toaster position="top-center" reverseOrder={false} />
-        <Component {...pageProps} />
+        <ErrorBoundary>
+          <Component {...pageProps} />
+        </ErrorBoundary>
         <ReactQueryDevtools initialIsOpen={false} />
       </ThemeProvider>
     </Provider>

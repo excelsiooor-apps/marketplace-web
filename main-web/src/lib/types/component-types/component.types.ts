@@ -4,11 +4,11 @@ import { ComponentVariantsEnum } from '@/lib/constants';
 export type ComponentVariants = ComponentVariantsEnum.PRIMARY | ComponentVariantsEnum.SECONDARY;
 
 export interface IThemedComponent {
-  theme: CurrentThemes;
+  theme?: CurrentThemes;
 }
 
 export interface IVariantedComponent {
-  variant: ComponentVariants;
+  variant?: ComponentVariants;
 }
 
 /**

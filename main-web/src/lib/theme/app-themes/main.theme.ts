@@ -1,8 +1,8 @@
-import { GlobalAppTheme, CurrentThemes } from 'styled-components';
-import { AppThemesEnum, StorageThemeEnum } from '@/lib/constants';
+import { GlobalAppTheme } from 'styled-components';
+import { AppThemesEnum } from '@/lib/constants';
 
-const currentTheme =
-  (window.localStorage.getItem(StorageThemeEnum.CURRENT_THEME) as CurrentThemes) ?? AppThemesEnum.LIGHT;
+// TODO: provide logic to setup a default theme
+const currentTheme = AppThemesEnum.LIGHT;
 
 export const theme: GlobalAppTheme = {
   theme: {
