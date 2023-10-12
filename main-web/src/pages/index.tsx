@@ -1,11 +1,11 @@
 // import * as React from 'react';
 import { NextPage } from 'next';
 // import { useRouter } from 'next/router';
-// import { ROUTES } from '../lib/constants/routes.const'
+// import { RouterKeys } from '@/lib/constants';
+import HomePage from './home';
 
 const IndexPage: NextPage = () => {
   // const router = useRouter();
-
   // React.useEffect(() => {
   //   if (status === 'authenticated') {
   //     router.replace(ROUTES.HOME)
@@ -14,7 +14,7 @@ const IndexPage: NextPage = () => {
   //   }
   // }, [status])
 
-  return null;
+  return <HomePage />;
 };
 
 export default IndexPage;

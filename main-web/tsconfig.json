@@ -19,11 +19,11 @@
       }
     ],
     "paths": {
-      "@/components/*": ["src/components/index.ts"],
+      "@/components": ["src/components/index.ts"],
       "@/lib/*": ["src/lib/*"],
     },
     "baseUrl": "./"
   },
-  "include": ["src", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".eslintrc.js", "next.config.js", "jest.config.js", "jest.setup.js"],
+  "include": ["src", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".eslintrc.js", "next.config.js", "jest.config.js", "jest.setup.js", "@/components", "@/pages@/lib/lib"],
   "exclude": ["node_modules", "__tests__", "__mock__"]
 }

@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  distDir: 'build',
+  pageExtensions: ['tsx', 'ts'],
+  reactStrictMode: false,
   typescript: {
     tsconfigPath: './tsconfig.json',
   },

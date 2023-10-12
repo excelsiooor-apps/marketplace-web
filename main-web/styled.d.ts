@@ -2,11 +2,7 @@
 import 'styled-components';
 
 declare module 'styled-components' {
-  export enum AppThemesEnum {
-    LIGHT = 'light',
-    DARK = 'dark',
-  }
-  export type CurrentThemes = AppThemesEnum.LIGHT | AppThemesEnum.DARK;
+  export type CurrentThemes = 'light' | 'dark';
   export interface ColorPallete {
     main: string;
     soft: string;
