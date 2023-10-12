@@ -7,6 +7,6 @@ const nextConfig = {
   images: {
     domains: ['lh3.googleusercontent.com', 'cdn.pixabay.com'],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
