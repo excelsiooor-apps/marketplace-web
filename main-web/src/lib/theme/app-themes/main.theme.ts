@@ -1,12 +1,9 @@
 import { GlobalAppTheme } from 'styled-components';
-import { AppThemesEnum } from '@/lib/constants';
 
 // TODO: provide logic to setup a default theme
-const currentTheme = AppThemesEnum.LIGHT;
 
 export const theme: GlobalAppTheme = {
   theme: {
-    current: currentTheme,
     // TODO: light dark theme colors
     light: {
       primary: {
