@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   plugins: ['react', '@typescript-eslint', 'prettier', 'testing-library'],
   extends: [
