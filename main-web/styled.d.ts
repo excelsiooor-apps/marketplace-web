@@ -2,7 +2,6 @@
 import 'styled-components';
 
 declare module 'styled-components' {
-  export type CurrentThemes = 'light' | 'dark';
   export interface ColorPallete {
     main: string;
     soft: string;
@@ -14,7 +13,6 @@ declare module 'styled-components' {
     secondary: ColorPalette;
   }
   export interface AppTheme {
-    current: CurrentThemes;
     light: Palette;
     dark: Palette;
   }
