@@ -3,8 +3,8 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { expect } from '@jest/globals';
 import { AppThemesEnum } from '@/lib/constants';
-import { useCurrentPallete } from '../use-current-palette';
 import { theme as globalTheme } from '@/lib/theme';
+import { useCurrentPallete } from '../use-current-palette';
 
 // Mock the useTheme function
 jest.mock('styled-components', () => ({

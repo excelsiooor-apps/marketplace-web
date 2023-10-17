@@ -1,10 +1,10 @@
-import { AppTheme, useTheme } from 'styled-components';
+import { useTheme } from 'styled-components';
 import { AppThemesEnum } from '@/lib/constants';
 
-export const useCurrentPallete = (currentTheme: AppThemesEnum.LIGHT | AppThemesEnum.DARK) => {
+export const useCurrentPallete = (currentTheme: AppThemesEnum.LIGHT | AppThemesEnum.DARK | null) => {
   const { theme } = useTheme();
-
-  const currentPalette = (theme as AppTheme)[currentTheme];
-
-  return currentPalette;
+  if (currentTheme) {
+    return theme[currentTheme];
+  }
+  return theme[AppThemesEnum.LIGHT];
 };

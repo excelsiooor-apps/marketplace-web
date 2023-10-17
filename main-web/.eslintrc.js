@@ -86,6 +86,7 @@ module.exports = {
         '**/*.spec.ts',
         '**/*.stories.tsx',
         '**/__mock__/**/*.ts',
+        '**/*.slice.ts',
       ],
       settings: {
         'import/parsers': {
@@ -112,6 +113,13 @@ module.exports = {
         'testing-library/no-dom-import': 'error',
         'testing-library/no-node-access': 'error',
         'testing-library/prefer-screen-queries': 'warn',
+        'import/no-cycle': [
+          'error',
+          {
+            maxDepth: 10,
+          },
+        ],
+        'no-param-reassign': 'off',
         // 'testing-library/await-async-query': 'error',
         // 'testing-library/no-await-sync-query': 'error',
         // 'testing-library/no-debug': 'error',

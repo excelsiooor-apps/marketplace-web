@@ -1,19 +1,12 @@
-// import * as React from 'react';
+import * as React from 'react';
 import { NextPage } from 'next';
-// import { useRouter } from 'next/router';
-// import { RouterKeys } from '@/lib/constants';
+import { useDefinedTheme } from '@/lib/hooks';
 import HomePage from './home';
 
 const IndexPage: NextPage = () => {
-  // const router = useRouter();
-  // React.useEffect(() => {
-  //   if (status === 'authenticated') {
-  //     router.replace(ROUTES.HOME)
-  //   } else {
-  //     router.replace(ROUTES.SIGN_UP)
-  //   }
-  // }, [status])
+  useDefinedTheme();
 
+  // Todo: provide auto redirecting logic for app by Router
   return <HomePage />;
 };
 

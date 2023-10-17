@@ -1,5 +1,10 @@
-import { rootReducer, setupStore } from '@/lib/store';
+import { CurrentThemes } from 'styled-components';
 
-export type TypedRootState = ReturnType<typeof rootReducer>;
-export type TypedAppStore = ReturnType<typeof setupStore>;
-export type TypedDispatch = TypedAppStore['dispatch'];
+export interface IGlobalStateSlice {
+  isAppLoading: boolean;
+}
+
+export interface IThemeSlice {
+  current: CurrentThemes | null;
+  isThemeDefining: boolean;
+}

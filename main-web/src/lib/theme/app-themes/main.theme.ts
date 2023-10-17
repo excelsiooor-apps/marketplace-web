@@ -1,13 +1,13 @@
-import { GlobalAppTheme } from 'styled-components';
+import { DefaultTheme } from 'styled-components';
 
 // TODO: provide logic to setup a default theme
 
-export const theme: GlobalAppTheme = {
+export const theme: DefaultTheme = {
   theme: {
     // TODO: light dark theme colors
     light: {
       primary: {
-        main: '',
+        main: '#DDBEAA',
         soft: '',
         deep: '',
         contrast: '',
@@ -43,5 +43,9 @@ export const theme: GlobalAppTheme = {
       lg: 1200,
       xl: 2560,
     },
+  },
+  indexes: {
+    modal: 800,
+    loader: 900,
   },
 };

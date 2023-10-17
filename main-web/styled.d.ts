@@ -1,7 +1,9 @@
 // styled.d.ts
 import 'styled-components';
+import { AppThemesEnum } from '@/lib/constants';
 
 declare module 'styled-components' {
+  export type CurrentThemes = AppThemesEnum.LIGHT | AppThemesEnum.DARK;
   export interface ColorPallete {
     main: string;
     soft: string;
@@ -16,7 +18,7 @@ declare module 'styled-components' {
     light: Palette;
     dark: Palette;
   }
-  export interface GlobalAppTheme {
+  export interface DefaultTheme {
     theme: AppTheme;
     breakpoints: {
       values: {
@@ -26,6 +28,10 @@ declare module 'styled-components' {
         lg: number;
         xl: number;
       };
+    };
+    indexes: {
+      modal: number;
+      loader: number;
     };
   }
 }

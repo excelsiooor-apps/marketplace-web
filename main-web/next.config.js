@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     domains: ['lh3.googleusercontent.com', 'cdn.pixabay.com'],
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 module.exports = nextConfig;
