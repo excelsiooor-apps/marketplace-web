@@ -6,7 +6,7 @@ const initialState: IGlobalStateSlice = {
 };
 
 export const globalAppSlice = createSlice({
-  name: 'user',
+  name: 'global',
   initialState,
   reducers: {
     setIsAppLoading: (state, action: PayloadAction<boolean>) => {
