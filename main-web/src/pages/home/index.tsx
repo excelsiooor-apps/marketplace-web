@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { MainContainer } from '@/components';
+import { MainContainer } from '@/components/app-containers';
 
 const HomePage: FC = () => {
   return (

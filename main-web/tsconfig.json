@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/components": ["src/components/index.ts"],
+      "@/components/*": ["src/components/*"],
+      "@/shared-components/*": ["src/components/shared/*"],
       "@/lib/*": ["src/lib/*"],
     },
     "baseUrl": "./"

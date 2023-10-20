@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import isPropValid from '@emotion/is-prop-valid';
 import { GlobalStyles, theme } from '@/lib/theme';
 import { setupStore } from '@/lib/store/core';
-import { ErrorBoundary } from '@/components';
+import { ErrorBoundary } from '@/components/app-containers';
 
 const queryClient = new QueryClient({
   defaultOptions: {

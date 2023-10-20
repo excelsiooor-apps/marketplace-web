@@ -7,3 +7,15 @@ export const MainWrapper = styled.main`
   display: flex;
   flex-direction: row;
 `;
+
+export const MainContent = styled.div`
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  //
+  box-shadow: -25px 0 25px rgba(0, 0, 0, 0.05);
+`;

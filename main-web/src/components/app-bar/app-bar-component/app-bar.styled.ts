@@ -12,4 +12,6 @@ export const AppBarWrapper = styled.div<IAppBarWrapperProps>`
   background-color: ${({ themedBackground }) => themedBackground};
   //
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;

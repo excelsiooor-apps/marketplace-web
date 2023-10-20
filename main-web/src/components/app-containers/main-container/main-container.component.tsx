@@ -1,8 +1,8 @@
 import { FC, ReactElement, ReactNode } from 'react';
-import { GlobalLoaderComponent } from 'src/components/loaders';
 import { IThemedComponent } from '@/lib/types';
-import { MainWrapper } from './main-container.styled';
-import { AppBarComponent } from '../../app-bar/app-bar.component';
+import { AppBarComponent } from '@/components/app-bar';
+import { GlobalLoaderComponent } from '@/shared-components/loaders';
+import { MainContent, MainWrapper } from './main-container.styled';
 
 interface IComponentPorps extends IThemedComponent {
   children: ReactNode | ReactElement;
@@ -13,7 +13,7 @@ export const MainContainer: FC<IComponentPorps> = ({ children }) => {
     <MainWrapper>
       <GlobalLoaderComponent />
       <AppBarComponent />
-      <div>{children}</div>
+      <MainContent>{children}</MainContent>
     </MainWrapper>
   );
 };
