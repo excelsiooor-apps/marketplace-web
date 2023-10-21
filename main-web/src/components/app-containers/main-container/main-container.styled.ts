@@ -17,5 +17,5 @@ export const MainContent = styled.div`
 
   align-items: center;
   //
-  box-shadow: -25px 0 25px rgba(0, 0, 0, 0.05);
+  box-shadow: -25px 0 15px rgba(0, 0, 0, 0.05);
 `;

@@ -1,5 +1,6 @@
 // styled.d.ts
 import 'styled-components';
+import { NextFont } from '@next/font';
 import { AppThemesEnum } from '@/lib/constants';
 
 declare module 'styled-components' {
@@ -32,6 +33,9 @@ declare module 'styled-components' {
     indexes: {
       modal: number;
       loader: number;
+    };
+    typography: {
+      roboto: NextFont;
     };
   }
 }

@@ -1,10 +1,10 @@
-import { CurrentThemes } from 'styled-components';
+import { Palette } from 'styled-components';
 import { ComponentVariantsEnum } from '@/lib/constants';
 
 export type ComponentVariants = ComponentVariantsEnum.PRIMARY | ComponentVariantsEnum.SECONDARY;
 
 export interface IThemedComponent {
-  theme?: CurrentThemes;
+  palette: Palette;
 }
 
 export interface IVariantedComponent {

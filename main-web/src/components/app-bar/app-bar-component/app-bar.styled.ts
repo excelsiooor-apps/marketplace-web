@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { IThemedComponent } from '@/lib/types';
 
-interface IAppBarWrapperProps extends IThemedComponent {
+interface IAppBarWrapperProps {
   themedBackground: string;
 }
 

@@ -1,4 +1,10 @@
 import { DefaultTheme } from 'styled-components';
+import { Roboto } from '@next/font/google';
+
+const roboto = Roboto({
+  subsets: ['cyrillic', 'latin'],
+  weight: ['100', '300', '400', '500', '700', '900'],
+});
 
 // TODO: provide logic to setup a default theme
 
@@ -47,5 +53,8 @@ export const theme: DefaultTheme = {
   indexes: {
     modal: 800,
     loader: 900,
+  },
+  typography: {
+    roboto,
   },
 };

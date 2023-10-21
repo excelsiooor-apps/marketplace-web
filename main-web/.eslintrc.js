@@ -64,7 +64,7 @@ module.exports = {
     'import/extensions': ['off', 'allways'],
     'react/require-default-props': 'off',
     'import/prefer-default-export': 'off',
-    '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-empty-interface': ['warn'],
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     'react/prop-types': 'off',
