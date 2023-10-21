@@ -1,7 +1,8 @@
-import { FC, ReactElement, ReactNode } from 'react';
+import { FC, ReactElement, ReactNode, useEffect } from 'react';
 import { useTheme } from 'styled-components';
 import { AppBarComponent } from '@/components/app-bar';
 import { GlobalLoaderComponent } from '@/shared-components/loaders';
+import { useDimensions } from '@/lib/hooks';
 import { MainContent, MainWrapper } from './main-container.styled';
 
 interface IComponentPorps {
@@ -10,9 +11,10 @@ interface IComponentPorps {
 
 export const MainContainer: FC<IComponentPorps> = ({ children }) => {
   const { typography } = useTheme();
+  const [ref, { width }] = useDimensions({ liveMeasure: true });
 
   return (
-    <MainWrapper className={typography.roboto.className}>
+    <MainWrapper ref={ref} className={typography.roboto.className}>
       <GlobalLoaderComponent />
       <AppBarComponent />
       <MainContent>{children}</MainContent>
