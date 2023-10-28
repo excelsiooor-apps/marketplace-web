@@ -1,5 +1,5 @@
-import { IAppBarListItem } from '@/lib/types';
-import { RouterKeys } from '../router-constants';
+import { IAppBarListItem } from '@/lib/types/components/app-bar-list.types';
+import { RouterKeys } from '../router/router.constants';
 
 export const APP_BAR_LIST: IAppBarListItem[] = [
   {
@@ -9,7 +9,7 @@ export const APP_BAR_LIST: IAppBarListItem[] = [
     route: RouterKeys.HOME,
   },
   {
-    id: 0,
+    id: 1,
     title: 'Categories',
     type: 'main',
     route: null,

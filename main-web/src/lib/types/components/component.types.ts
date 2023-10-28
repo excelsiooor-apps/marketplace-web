@@ -1,5 +1,5 @@
 import { Palette } from 'styled-components';
-import { ComponentVariantsEnum } from '@/lib/constants';
+import { ComponentVariantsEnum } from '@/lib/constants/components/components.constants';
 
 export type ComponentVariants = ComponentVariantsEnum.PRIMARY | ComponentVariantsEnum.SECONDARY;
 
