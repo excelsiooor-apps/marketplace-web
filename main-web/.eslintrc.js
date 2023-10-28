@@ -87,6 +87,7 @@ module.exports = {
         '**/*.stories.tsx',
         '**/__mock__/**/*.ts',
         '**/*.slice.ts',
+        '**/*.d.ts',
       ],
       settings: {
         'import/parsers': {

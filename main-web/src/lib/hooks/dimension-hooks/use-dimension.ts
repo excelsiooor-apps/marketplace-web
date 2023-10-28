@@ -33,6 +33,13 @@ export const useDimensions = ({ liveMeasure = true }: UseDimensionsArgs): UseDim
     setNode(newNode);
   }, []);
 
+  const measureHandler = () => {
+    if (node) {
+      return window.requestAnimationFrame(() => setDimensions(getDimensionObject(node)));
+    }
+    return null;
+  };
+
   useEffect(() => {
     if (!node) return;
 
@@ -50,5 +57,5 @@ export const useDimensions = ({ liveMeasure = true }: UseDimensionsArgs): UseDim
     }
   }, [node, liveMeasure]);
 
-  return [ref, dimensions, node];
+  return [ref, dimensions, measureHandler, node];
 };

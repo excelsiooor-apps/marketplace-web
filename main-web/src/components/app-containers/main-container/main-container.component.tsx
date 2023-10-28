@@ -11,7 +11,7 @@ interface IComponentPorps {
 
 export const MainContainer: FC<IComponentPorps> = ({ children }) => {
   const { typography } = useTheme();
-  const [ref, { width }] = useDimensions({ liveMeasure: true });
+  const [ref, { width }] = useDimensions({ liveMeasure: false });
 
   return (
     <MainWrapper ref={ref} className={typography.roboto.className}>

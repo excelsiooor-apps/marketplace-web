@@ -35,6 +35,7 @@
     "**/*.config.js",
     "**/*.setup.ts",
     "**/*.setup.js",
+    "**/*.d.ts",
     ".eslintrc.js",
     ".babelrc",
   ],

@@ -1,15 +1,22 @@
+import { Nullable } from 'global-types';
+
 export interface DimensionObject {
-  width: number | null;
-  height: number | null;
-  top: number | null;
-  left: number | null;
-  x: number | null;
-  y: number | null;
-  right: number | null;
-  bottom: number | null;
+  width: Nullable<number>;
+  height: Nullable<number>;
+  top: Nullable<number>;
+  left: Nullable<number>;
+  x: Nullable<number>;
+  y: Nullable<number>;
+  right: Nullable<number>;
+  bottom: Nullable<number>;
 }
 
-export type UseDimensionsHook = [(node: HTMLElement) => void, DimensionObject, HTMLElement | null];
+export type UseDimensionsHook = [
+  (node: HTMLElement) => void,
+  DimensionObject,
+  measureHandler: () => Nullable<number>,
+  Nullable<HTMLElement>,
+];
 
 export interface UseDimensionsArgs {
   liveMeasure?: boolean;
