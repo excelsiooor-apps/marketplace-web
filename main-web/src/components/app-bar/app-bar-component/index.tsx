@@ -1,13 +1,10 @@
 import React, { FC } from 'react';
-import { useCurrentPallete, useTypedSelector } from '@/lib/hooks';
-import { themeSelector } from '@/lib/store';
-
+import { useCurrentPallete } from '@/lib/hooks';
 import { AppBarListComponent } from './fragments';
 import { AppBarWrapper } from './app-bar.styled';
 
 export const AppBarComponent: FC = () => {
-  const { current } = useTypedSelector(themeSelector);
-  const palette = useCurrentPallete(current);
+  const palette = useCurrentPallete();
 
   const { primary } = palette;
 
