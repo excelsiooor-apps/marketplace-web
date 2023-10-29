@@ -1,6 +1,6 @@
 import React, { ComponentType, Fragment, ReactElement, ReactNode } from 'react';
 import { HttpResponse } from 'global-types';
-import { RenderItemFunction, keyExtractorType } from '@/lib/types';
+import { RenderItemFunction, KeyExtractorType } from '@/lib/types';
 
 type WrapperChildrenType = { children: ReactElement | ReactNode };
 
@@ -22,7 +22,7 @@ export const RenderList = <ItemGeneric,>({
 
   const isRenderrebleData = Array.isArray(data);
 
-  const key: keyExtractorType = (value, keyPrefix = '') => `${keyPrefix}${value}`;
+  const key: KeyExtractorType = (value, keyPrefix = '') => `${keyPrefix}${value}`;
 
   const validatedData =
     isRenderrebleData && data.length > 0 ? data.map(value => renderItem(value, key)) : noDataMessage;
