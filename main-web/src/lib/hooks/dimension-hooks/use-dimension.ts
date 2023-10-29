@@ -16,7 +16,7 @@ const getDimensionObject = (node: HTMLElement): DimensionObject => {
   };
 };
 
-export const useDimensions = ({ liveMeasure = true }: UseDimensionsArgs): UseDimensionsHook => {
+export const useDimensions = ({ liveMeasure = true }: UseDimensionsArgs = {}): UseDimensionsHook => {
   const [dimensions, setDimensions] = useState<DimensionObject>({
     width: null,
     height: null,
